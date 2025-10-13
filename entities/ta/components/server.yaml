@@ -45,6 +45,25 @@ entities:
                 ram:
                   title: Количество RAM, GB
                   type: integer
+                gpu:
+                  title: Графические процессоры
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      model:
+                        title: Модель GPU
+                        type: string
+                      count:
+                        title: Количество
+                        type: integer
+                      memory_gb:
+                        title: Объем памяти на одном GPU, GB
+                        type: integer
+                    required:
+                      - model
+                      - count
+                      - memory_gb
                 disks:
                   title: Диски
                   type: array
@@ -174,6 +193,25 @@ entities:
                 ram:
                   title: Количество RAM, GB
                   type: integer
+                gpu:
+                  title: Графические процессоры
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      model:
+                        title: Модель GPU
+                        type: string
+                      count:
+                        title: Количество
+                        type: integer
+                      memory_gb:
+                        title: Объем памяти на одном GPU, GB
+                        type: integer
+                    required:
+                      - model
+                      - count
+                      - memory_gb
                 disks:
                   title: Диски
                   type: array
